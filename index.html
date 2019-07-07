@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Memory Game</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+<!-- Code for modal from https://www.w3schools.com/howto/howto_css_modals.asp -->
+	<div id="myModal" class="modal">
+
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <p id='congrats-text'>Congratulations! You won! </p>
+	  </div>
+
+	</div>
+
+	<section class="top-bar">
+		<div class="timer">
+			<button id="startTimer" onclick="setInterval(myTimer, 1000)">Start</button>
+			<p id="timerCounter"></p>
+		</div>
+		<div id="move-counter"></div>
+		<div id="star-rating"></div>
+		<button id="resetGame" onclick="resetGame(setInterval(myTimer, 1000))">Reset Game</button>
+	</section>
+
+	<main class="card-group">
+		<div class="match1 hidden" onclick="toggleCard(this)">
+			<p>✿</p>
+		</div>
+		<div class="match1 hidden" onclick="toggleCard(this)">
+			<p>✿</p>
+		</div>
+		<div class="match2 hidden" onclick="toggleCard(this)">
+			<p>★</p>
+		</div>
+		<div class="match2 hidden" onclick="toggleCard(this)">
+			<p>★</p>
+		</div>
+		<div class="match3 hidden" onclick="toggleCard(this)">
+			<p>♔</p>
+		</div>
+		<div class="match3 hidden" onclick="toggleCard(this)">
+			<p>♔</p>
+		</div>
+		<div class="match4 hidden" onclick="toggleCard(this)">
+			<p>☁</p>
+		</div>
+		<div class="match4 hidden" onclick="toggleCard(this)">
+			<p>☁</p>
+		</div>
+		<div class="match5 hidden" onclick="toggleCard(this)">
+			<p>♥</p>
+		</div>
+		<div class="match5 hidden" onclick="toggleCard(this)">
+			<p>♥</p>
+		</div>
+		<div class="match6 hidden" onclick="toggleCard(this)">
+			<p>☾</p>
+		</div>
+		<div class="match6 hidden" onclick="toggleCard(this)">
+			<p>☾</p>
+		</div>
+		<div class="match7 hidden" onclick="toggleCard(this)">
+			<p>✴</p>
+		</div>
+		<div class="match7 hidden" onclick="toggleCard(this)">
+			<p>✴</p>
+		</div>
+		<div class="match8 hidden" onclick="toggleCard(this)">
+			<p>❆</p>
+		</div>
+		<div class="match8 hidden" onclick="toggleCard(this)">
+			<p>❆</p>
+		</div>
+		
+	</main>
+
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
