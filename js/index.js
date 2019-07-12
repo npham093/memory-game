@@ -107,6 +107,8 @@ function checkMatch(el) {
 	if (cardShownList.length > 2) {
 		return;
 	}
+
+	starRating();
 }
 
 function hideMissedCards() {
@@ -142,7 +144,6 @@ function starRating() {
 	}
 }
 
-starRating();
 
 // modal code from https://www.w3schools.com/howto/howto_css_modals.asp
 // Get the modal
